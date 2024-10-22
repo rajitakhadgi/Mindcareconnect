@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Connect - Professional Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MindCare Connect</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="self-help.html">Self Help Tools</a>
+                <a href="educational.html">Educational Resources</a>
+                <a href="community.html">Community</a>
+                <a href="professional.html">Professional Help</a>
+            </div>
+        </nav>
+    </header>
+
+        <main class="page-container">
+            <section class="search-filters">
+                <h2>Result</h2>
+                <div class="filter-group">
+                    <div class="filter">
+                        <label for="specialties">Specialties</label>
+                        <select id="specialties" aria-label="Select Specialty" onchange="filterProfessionals()">
+                            <option value="">All Specialties</option>
+                            <option value="Therapists">Therapists</option>
+                            <option value="Counselor">Counselor</option>
+                            <option value="Psychiatrist">Psychiatrist</option>
+                            <option value="Psychologist">Psychologist</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <label for="location">Location</label>
+                        <input 
+                            type="text" 
+                            id="location" 
+                            placeholder="Enter Location" 
+                            aria-label="Enter Location"
+                        >
+                    </div>
+                                       
+                    <div class="availability-section">
+                        <label class="filter-label">Availability</label>
+                        <div class="availability-wrapper">
+                            <input 
+                                type="checkbox" 
+                                id="availability" 
+                                class="availability-checkbox"
+                            >
+                            <span class="availability-text">Available Now</span>
+                        </div>
+            </section>
+
+        <section class="professional-grid">
+            <div class="professional-card">
+                <div class="professional-img">
+                    <img src="https://media.istockphoto.com/id/1419938890/photo/young-woman-psychologist-smiling-looks-at-the-camera-isolated-on-lilac-studio-background-copy.jpg?s=612x612&w=0&k=20&c=nkzBKrw_YyhWX8BlGPWL23Z5UdkGNrjWYf5GaYpugiA=" alt="Dr. Rusta Shahi">
+                </div>
+                <h3>Dr. Rusta Shahi</h3>
+                <p>Specialty: Therapists</p>
+                <p>"Dedicated to providing compassionate and personalized care"</p>
+                <button class="button primary-button">Available Now</button>
+            </div>
+
+            <div class="professional-card">
+                <div class="professional-img">
+                    <img src="https://photos.psychologytoday.com/665b8933-0055-4677-9d20-74b987db8e1e/1/320x400.jpeg" alt="Dr.Aayusha Kattle">
+                </div>  
+                <h3>Dr.Aayusha Kattle</h3>
+                <p>Specialty: Psychiatrist</p>
+                <p>"Committed to mental health and well-being through expert care"</p>
+                <button class="button primary-button">Available Now</button>
+            </div>
+
+            <div class="professional-card">
+                <div class="professional-img">
+                    <img src="https://photos.psychologytoday.com/30a392c1-21cf-4aaf-8a66-f04f55671513/1/320x400.jpeg" alt="Smriti Bhattarai">
+                </div>
+                <h3>Smriti Bhattarai</h3>
+                <p>Specialty: Counselor</p>
+                <p>"Empowering individuals through compassionate therapy"</p>
+                <button class="button primary-button">Available Now</button>
+            </div>
+
+            <div class="professional-card">
+                <div class="professional-img">
+                    <img src="https://images.squarespace-cdn.com/content/v1/58d6fe2759cc68feaa491aa3/b6e0cd80-26a8-42ca-9866-f3a5d870f779/Cedric+Lai+Jpeg.jpg" alt="Rubit Khadgi">
+                </div>
+                <h3>Rubit Khadgi</h3>
+                <p>Specialty: Counselor</p>
+                <p>"Guiding you to better mental health with personalized care"</p>
+                <button class="button primary-button">Available Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="https://freepnglogo.com/images/all_img/facebook-circle-logo-png.png" alt="Facebook"></a>
+            <a href="#"><img src="https://seeklogo.com/images/T/twitter-logo-A84FE9258E-seeklogo.com.png" alt="Twitter"></a>
+            <a href="#"><img src="https://w7.pngwing.com/pngs/704/270/png-transparent-social-media-instagram-login-graphy-ig-instagram-icon-rectangle-magenta-mobile-phones-thumbnail.png" alt="Instagram"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+               <li><a href="">Privacy Policy <a></li>
+               <li><a href="">Terms and Conditions <a></li>
+               <li><a href="">Cookie Policy <a></li>    
+                 </ul>       
+                         </div>
+                         <div class="footerBottom">
+        <p>© 2024 MindCare Connect. All rights reserved.</p>
+       </div>
+        </footer>
+    <script src="script.js"></script>
+</body>
+</html>
