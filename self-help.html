@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Connect - Self-Help Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">MindCare Connect</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="self-help.html">Self Help Tools</a>
+                <a href="educational.html">Educational Resources</a>
+                <a href="community.html">Community</a>
+                <a href="professional.html">Professional Help</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="relaxation-techniques">
+            <h2>Relaxation Techniques</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Deep Breathing</h3>
+                    <p>Learn how to use deep breathing to reduce stress and anxiety.</p>
+                    <button class="button primary-button" onclick="startExercise('breathing')">Start Exercise</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Progressive Muscle Relaxation</h3>
+                    <p>A technique to reduce muscle tension and promote relaxation.</p>
+                    <button class="button primary-button" onclick="startExercise('muscle')">Start Exercise</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Visualization</h3>
+                    <p>Use guided imagery to create a mental sense of peace and calm.</p>
+                    <button class="button primary-button" onclick="startExercise('visualization')">Start Exercise</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mindfulness-exercises">
+            <h2>Mindfulness Exercises</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Body Scan Meditation</h3>
+                    <p>A practice to develop greater awareness.</p>
+                    <button class="button primary-button" onclick="startMeditation('bodyscan')">Try Now</button>
+                </div>
+                <div class="tool-card">
+                    <h3>Maintain a Routine</h3>
+                    <p>Having a consistent daily routine can help reduce anxiety.</p>
+                    <button class="button primary-button" onclick="showRoutinePlanner()">Try Now</button>
+                </div>
+            </div>
+            <div class="container">
+                <section class="mood-tracker">
+                    <h2>Mood Tracking</h2>
+                    <div class="mood-card">
+                        <h3>Daily Mood Tracker</h3>
+                        
+                        <div class="mood-selection">
+                            <p>Track your mood daily to identify patterns and triggers.</p>
+                            <div class="mood-buttons">
+                                <button class="mood-emoji" data-mood="1">😢</button>
+                                <button class="mood-emoji" data-mood="2">😐</button>
+                                <button class="mood-emoji" data-mood="3">😊</button>
+                                <button class="mood-emoji" data-mood="4">😄</button>
+                                <button class="mood-emoji" data-mood="5">🥳</button>
+                            </div>
+                        </div>
+                        
+                        <button id="add-mood-btn" disabled>Track Mood</button>
+                        
+                        <div class="chart-container">
+                            <canvas id="moodChart"></canvas>
+                            <div class="y-axis-labels">
+                                <span>🥳</span>
+                                <span>😄</span>
+                                <span>😊</span>
+                                <span>😐</span>
+                                <span>😢</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><img src="https://freepnglogo.com/images/all_img/facebook-circle-logo-png.png" alt="Facebook"></a>
+            <a href="#"><img src="https://seeklogo.com/images/T/twitter-logo-A84FE9258E-seeklogo.com.png" alt="Twitter"></a>
+            <a href="#"><img src="https://w7.pngwing.com/pngs/704/270/png-transparent-social-media-instagram-login-graphy-ig-instagram-icon-rectangle-magenta-mobile-phones-thumbnail.png" alt="Instagram"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+               <li><a href="">Privacy Policy <a></li>
+               <li><a href="">Terms and Conditions <a></li>
+               <li><a href="">Cookie Policy <a></li>    
+                 </ul>       
+                         </div>
+                         <div class="footerBottom">
+        <p>© 2024 MindCare Connect. All rights reserved.</p>
+       </div>
+        </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
